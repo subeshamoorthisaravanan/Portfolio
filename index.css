@@ -281,18 +281,6 @@ header .navbar a.active {
   margin-bottom: 25px;
   color: #444;
 }
-.modal-content {
-  background: #fff;
-  margin: auto;
-  padding: 20px;
-  border-radius: 15px;
-  width: 95%;        /* Wider view */
-  max-width: 1300px; /* Larger modal */
-  height: 90vh;      /* Taller height */
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
 /* ================================
    Button Styles
 ================================= */
@@ -395,6 +383,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
