@@ -257,22 +257,30 @@ header .navbar a.active {
 
 
 /* ================================
-   Resume Modal Styles (Big Size)
+   Resume Section Styles
 ================================= */
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Darker overlay for focus */
-  justify-content: center;
-  align-items: center;
+.resume {
+  background: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
 }
 
+.resume .heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.resume .heading span {
+  color: #f7b731;
+}
+
+.resume-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: #444;
+}
 .modal-content {
   background: #fff;
   margin: auto;
@@ -285,27 +293,25 @@ header .navbar a.active {
   flex-direction: column;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
+/* ================================
+   Button Styles
+================================= */
 
-.modal-content iframe {
-  flex: 1;
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #f7b731;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
   border: none;
-  border-radius: 10px;
-  height: 100%;
-  width: 100%;
-}
-
-.close-btn {
-  align-self: flex-end;
-  font-size: 36px;     /* Bigger close button */
-  font-weight: bold;
-  color: #333;
   cursor: pointer;
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
-.close-btn:hover {
-  color: #f7b731;
+.btn:hover {
+  background: #e5a91c; /* Slightly darker hover color for effect */
 }
 
 
@@ -389,5 +395,6 @@ footer {
     width: 100%;
   }
 }
+
 
 
