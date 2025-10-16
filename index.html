@@ -110,13 +110,25 @@
   </section>
 
   <!-- Resume Section -->
-  <section class="resume" id="resume">
-    <h2 class="heading">My <span>Resume</span></h2>
-    <div class="resume-content">
-      <p>Download my resume to see my full experience and projects.</p>
-      <a href="SUbeshamoorthi Resume25.pdf" class="btn" download>SUbeshamoorthi Resume25.pdf</a>
+<section class="resume" id="resume">
+  <h2 class="heading">My <span>Resume</span></h2>
+  <div class="resume-content">
+    <p>Download or view my resume below.</p>
+    <div class="resume-buttons">
+      <a href="Subeshamoorthi Resume25.pdf" class="btn" download="Subeshamoorthi_Resume.pdf">Download Resume</a>
+      <button class="btn show-btn" id="showResumeBtn">Show Resume</button>
     </div>
-  </section>
+  </div>
+
+  <!-- Resume Viewer Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <iframe src="Subeshamoorthi Resume25.pdf" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
@@ -137,5 +149,6 @@
   <script src="index.js"></script>
 </body>
 </html>
+
 
 
