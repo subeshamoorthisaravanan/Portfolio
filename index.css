@@ -257,51 +257,57 @@ header .navbar a.active {
 
 
 /* ================================
-   Resume Section Styles
+   Resume Modal Styles (Big Size)
 ================================= */
 
-.resume {
-  background: #f8f9fa;
-  padding: 60px 0;
-  text-align: center;
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Darker overlay for focus */
+  justify-content: center;
+  align-items: center;
 }
 
-.resume .heading {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #222;
+.modal-content {
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 95%;        /* Wider view */
+  max-width: 1300px; /* Larger modal */
+  height: 90vh;      /* Taller height */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.resume .heading span {
+.modal-content iframe {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.close-btn {
+  align-self: flex-end;
+  font-size: 36px;     /* Bigger close button */
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
   color: #f7b731;
 }
 
-.resume-content p {
-  font-size: 1.1rem;
-  margin-bottom: 25px;
-  color: #444;
-}
-
-/* ================================
-   Button Styles
-================================= */
-
-.btn {
-  display: inline-block;
-  padding: 12px 32px;
-  background: #f7b731;
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #e5a91c; /* Slightly darker hover color for effect */
-}
 
 
 /* Contact Section */
@@ -383,4 +389,5 @@ footer {
     width: 100%;
   }
 }
+
 
