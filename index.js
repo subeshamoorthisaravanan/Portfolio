@@ -26,3 +26,24 @@ if (menuToggle && navbar) {
     navbar.classList.toggle("active");
   });
 }
+// Resume Modal Show/Hide
+const showBtn = document.getElementById('showResumeBtn');
+const modal = document.getElementById('resumeModal');
+const closeModal = document.getElementById('closeModal');
+
+if (showBtn && modal && closeModal) {
+  showBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+}
+
