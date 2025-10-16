@@ -286,6 +286,7 @@ header .navbar a.active {
 ================================= */
 
 .btn {
+  padding-bottom: 10px;
   display: inline-block;
   padding: 12px 32px;
   background: #f7b731;
@@ -383,6 +384,7 @@ footer {
     width: 100%;
   }
 }
+
 
 
 
